@@ -17,9 +17,9 @@ import os
 from typing import List, Tuple, Dict
 
 import datasets
-from utils import schemas
-from utils.configs import BigBioConfig
-from utils.constants import Tasks
+from bio_utils import schemas
+from bio_utils.configs import BigBioConfig
+from bio_utils.constants import Tasks
 
 _CITATION = """@inproceedings{PhoNER_COVID19,
     author    = {Thinh Hung Truong and Mai Hoang Dao and Dat Quoc Nguyen},  

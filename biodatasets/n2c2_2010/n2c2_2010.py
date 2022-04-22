@@ -50,9 +50,9 @@ from typing import List, Tuple
 import datasets
 from datasets import Version
 
-from utils import schemas
-from utils.configs import BigBioConfig
-from utils.constants import Tasks
+from bio_utils import schemas
+from bio_utils.configs import BigBioConfig
+from bio_utils.constants import Tasks
 
 _CITATION = """\
 @article{DBLP:journals/jamia/UzunerSSD11,

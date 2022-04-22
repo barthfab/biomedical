@@ -27,9 +27,9 @@ import datasets
 import pandas as pd
 from pathlib import Path
 from typing import List, Tuple, Dict
-from utils import parsing, schemas
-from utils.configs import BigBioConfig
-from utils.constants import Tasks
+from bio_utils import parsing, schemas
+from bio_utils.configs import BigBioConfig
+from bio_utils.constants import Tasks
 
 _CITATION = """\
 @inproceedings{,

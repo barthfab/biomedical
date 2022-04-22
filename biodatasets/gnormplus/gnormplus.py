@@ -21,10 +21,10 @@ from typing import Dict, List, Tuple
 import datasets
 from bioc import biocxml
 
-from utils import schemas
-from utils.configs import BigBioConfig
-from utils.constants import Tasks
-from utils.parsing import get_texts_and_offsets_from_bioc_ann
+from bio_utils import schemas
+from bio_utils.configs import BigBioConfig
+from bio_utils.constants import Tasks
+from bio_utils.parsing import get_texts_and_offsets_from_bioc_ann
 
 _CITATION = """\
 @Article{Wei2015,

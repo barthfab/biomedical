@@ -20,14 +20,14 @@ component, Tissue and Organ, defined with reference to the Common Anatomy Refere
 (see https://bioportal.bioontology.org/ontologies/CARO).
 """
 import datasets
-import utils.parsing as parsing
-import utils.schemas as schemas
+import bio_utils.parsing as parsing
+import bio_utils.schemas as schemas
 
 from pathlib import Path
 from typing import Dict, Iterator, List, Tuple
 
-from utils.configs import BigBioConfig
-from utils.constants import Tasks
+from bio_utils.configs import BigBioConfig
+from bio_utils.constants import Tasks
 
 _CITATION = """\
 @article{kury2020chia,

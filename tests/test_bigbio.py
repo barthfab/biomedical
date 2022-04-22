@@ -11,9 +11,9 @@ from typing import Iterable, Iterator, List, Optional, Union, Dict
 
 import datasets
 from datasets import DatasetDict, Features
-from utils.constants import Tasks
-from utils.schemas import (entailment_features, kb_features, pairs_features,
-                           qa_features, text2text_features, text_features)
+from bio_utils.constants import Tasks
+from bio_utils.schemas import (entailment_features, kb_features, pairs_features,
+                               qa_features, text2text_features, text_features)
 
 sys.path.append(str(Path(__file__).parent.parent))
 

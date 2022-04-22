@@ -25,9 +25,9 @@ from typing import Dict, List, Tuple
 from pathlib import Path
 
 import datasets
-from utils import parsing, schemas
-from utils.configs import BigBioConfig
-from utils.constants import Tasks
+from bio_utils import parsing, schemas
+from bio_utils.configs import BigBioConfig
+from bio_utils.constants import Tasks
 
 _CITATION = """\
 @Article{SETH2016,

@@ -12,8 +12,8 @@ import unittest
 
 import datasets
 from datasets import DatasetDict, Features
-from utils.constants import Tasks
-from utils.schemas import (
+from bio_utils.constants import Tasks
+from bio_utils.schemas import (
     entailment_features,
     kb_features,
     pairs_features,
