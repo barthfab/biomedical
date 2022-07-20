@@ -73,8 +73,11 @@ from datasets import Features, Value
 # Buitelaar, Paul / Declerck, Thierry / Sacaleanu, Bogdan / Vintar, Spela / Raileanu, Diana / Crispi, Claudia: A Multi-Layered, XML-Based Approach to the Integration of Linguistic and Semantic Annotations. In: Proceedings of EACL 2003 Workshop on Language Technology and the Semantic Web (NLPXML’03), Budapest, Hungary, April 2003.
 from bigbio.utils import schemas
 from bigbio.utils.configs import BigBioConfig
-from bigbio.utils.constants import Tasks
+from bigbio.utils.constants import Lang, Tasks
+from bigbio.utils.license import Licenses
 
+_LANGUAGES = [Lang.EN]
+_PUBMED = True
 _LOCAL = False
 _CITATION = """\
 @inproceedings{,
@@ -110,8 +113,7 @@ _HOMEPAGE = "https://muchmore.dfki.de/resources1.htm"
 # multilingual information on the basis of a domain ontology and classification.
 # For the main task of multilingual domain modelling, the project will focus
 # on German and English. "
-_LICENSE = "other"
-
+_LICENSE = Licenses.UNKNOWN
 _URLs = {
     "muchmore_source": [
         "https://muchmore.dfki.de/pubs/springer_english_train_plain.tar.gz",
@@ -288,7 +290,7 @@ class MuchMoreDataset(datasets.GeneratorBasedBuilder):
             features=features,
             supervised_keys=None,
             homepage=_HOMEPAGE,
-            license=_LICENSE,
+            license=str(_LICENSE),
             citation=_CITATION,
         )
 
